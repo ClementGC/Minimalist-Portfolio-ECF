@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
+
+:root {
+    --cyan: #5FB4A2;
+    --darkblue: #203A4C;
+    --darkblue-2: #33323D;
+    --light-grey: #FAFAFA;
+    --light-grey-2: #EAEAEB;
+    --red: #F43030;
+}
+
+/* Set font-family, base font-size and line-height */
+
+body {
+    font-size: 1rem;
+    line-height: 1.875;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    background-color: var(--light-grey);
+    overflow-x: hidden;
+    color: var(--darkblue-2);
+}
+
+h1, h2 {
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3.125rem;
+    letter-spacing: -.028rem;
+    padding-right: 3.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.25rem;
+    /* padding: 3.625rem 3.625rem 0 0; */
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -.023rem;
+}
+
+h3 {
+    font-family: 'ibarra-real-nova';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -.018rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    opacity: 0.8;
+}
+
+/*layout*/
+
+.container {
+    padding-left: 10.25rem;
+    padding-right: 10.25rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1110px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+/*header*/
+
+/*presentation section*/
+
+.presentation-content {
+    position: relative;
+}
+
+.presentation-item {
+    position: absolute;
+    bottom: 0;
+    width: 27.75rem;
+    background-color: #FAFAFA;
+}
+
+.img-sm {
+    display: none;
+}
+
+.presentation-content .button {
+    left: 2.95rem;
+    bottom: .6rem;
+}
+
+/*section content*/
+
+.article-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9.375rem;
+    margin-bottom: 9.625rem;
+}
+
+.about-img img:nth-child(1) {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-img img:nth-child(2), .about-img img:nth-child(3){
+    display: none;
+}
+
+
+
+.content-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    margin-right: 6rem;
+    max-width: 21.875rem;
+    max-height: 37.5rem;
+    margin-left: 7rem;
+    border-top: 1px solid RGBA(51,50,61,0.15);
+    border-bottom: 1px solid RGBA(51,50,61,0.15);
+}
+
+.content-desc p {
+    padding-bottom: 1.125rem;
+    padding-top: 2rem;
+}
+
+/*contact section*/
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8.625rem;
+}
+
+.contact-bar {
+    height: 1px;
+    width: 32rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: RGBA(51,50,61,0.15);
+}
+
+.contact-content h2 {
+    max-width: 22rem;
+}
+
+
+.portfolio-article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.portfolio-img img{
+    object-fit: cover;
+}
+
+.portfolio-desc {
+    padding-top: 6.75rem;
+    padding-bottom: 6.75rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .presentation-item {
+        width: 32rem;
+    }
+
+    .about-img img:nth-child(1) {
+        display: none;
+    }
+
+    .about-img img:nth-child(2) {
+        display: block;
+    }
+
+    .about-img {
+        min-height: 100%;
+    }
+ 
+    .content-desc {
+        margin-right: 0;
+        margin-left: 0;
+        min-width: 50%;
+        min-height: 100%;
+    }
+
+    .contact-content h2 {
+        min-width: 21.875rem;
+    }
+
+    .portfolio-desc {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .portfolio-article {
+        gap: 4.25rem;
+    }
+
+    .portfolio-desc:nth-child(even) {
+        margin-left: 0;
+    }
+ 
+}
+
+@media screen and (width: 768px) {
+    .img-sm {
+        display: block;
+    }
+
+    .img-ms {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    h1 {
+        padding: 0;
+        margin-top: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .img-sm {
+        display: block;
+    }
+
+    .img-ms {
+        display: none;
+    }
+
+    .article-content {
+        flex-direction: column;
+        margin-top: 7rem;
+        margin-bottom: 7.5rem;
+    }
+
+    .content-desc {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-left: 0;
+        margin-top: 2rem;
+        max-width: 100%;
+        margin-right: 0;
+        max-height: none;
+    }
+
+    .about-img img:nth-child(1) {
+        display: none;
+    }
+
+    .about-img img:nth-child(2) {
+        display: none;
+    }
+
+    .about-img img:nth-child(3) {
+        display: block;
+        object-fit: cover;
+        min-width: 100%;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact-bar {
+        display: none;
+    }
+
+    .contact-content h2 {
+        max-width: 100%;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .portfolio-article:nth-child(even) {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .portfolio-article {
+        margin-top: 4.5rem;
+        margin-bottom: 0;
+    }
+    .portfolio-article:first-child {
+        margin-top: 0;
+    }
+    .portfolio-desc {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        max-width: 560px;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .presentation-content {
+        position: relative;
+    }
+    
+    .presentation-item {
+        position: relative;
+        top: 0;
+        margin: 0;
+        width: auto;
+        background-color: #FAFAFA;
+    }
+}

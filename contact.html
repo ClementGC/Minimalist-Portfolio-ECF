@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="/img/Home/Minimalist-PF-white.svg">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav nav container">
+            <figure class="main-nav-logo nav-logo">
+                <img src="/img/Home/Minimalist-PF-black.svg" alt="Minimalist Portfolio" loading="lazy">
+            </figure>
+            <button class="main-nav__toggler" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+                <span class="main-nav__bar"></span>
+                <span class="main-nav__bar"></span>
+                <span class="main-nav__bar"></span>
+            </button>
+            <ul class="main-nav-list nav-list" id="menu">
+                <li class="menu-item"><a href="/index.html" class="nav-link">Home</a></li>
+                <li class="menu-item"><a href="/portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="menu-item"><a href="/contact.html" class="nav-link active">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="contact-section container">
+            <div class="contact-section-content">
+                <h2>Get in Touch</h2>
+                <div class="contact-desc-items">
+                    <p>I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.</p>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="https://github.com" target="_blank" class="social-link"><img src="/img/Contact Me/Github-black.svg" alt="GitHub" loading="lazy"></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://twitter.com" target="_blank" class="social-link"><img src="/img/Contact Me/Twitter-black.svg" alt="Twitter" loading="lazy"></a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://fr.linkedin.com" target="_blank" class="social-link"><img src="/img/Contact Me/LinkedIn-black.svg" alt="LinkedIn" loading="lazy"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section container">
+            <div class="contact-section-content">
+                <h2>Contact Me</h2>
+                <form class="contact-form" action="" novalidate>
+                    <div class="contact-form-input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Jane Appleseed" required aria-required="true"/>
+                        <span class="error-message error-message-name"></span>
+                    </div>
+                    <div class="contact-form-input">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required aria-required="true"/>
+                        <span class="error-message error-message-email"></span>
+                    </div>
+                    <div class="contact-form-input">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required aria-required="true" placeholder="How can I help?"></textarea>
+                        <span class="error-message error-message-textarea"></span>
+                    </div>
+                    <button type="submit" class="button button-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <nav class="footer-nav nav">
+                <figure class="footer-nav-logo nav-logo">
+                    <img src="/img/Home/Minimalist-PF-white.svg" alt="Minimalist Portfolio" loading="lazy">
+                </figure>
+                <ul class="footer-nav-list nav-list" id="menu">
+                    <li class="menu-item"><a href="/index.html" class="nav-link">Home</a></li>
+                    <li class="menu-item"><a href="/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="menu-item"><a href="/contact.html" class="nav-link">Contact me</a></li>
+                </ul>
+            </nav>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="https://github.com" target="_blank" class="social-link"><img src="/img/Contact Me/Github-white.svg" alt="GitHub" loading="lazy"></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com" target="_blank" class="social-link"><img src="/img/Contact Me/Twitter-white.svg" alt="Twitter" loading="lazy"></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://fr.linkedin.com" target="_blank" class="social-link"><img src="/img/Contact Me/LinkedIn-white.svg" alt="LinkedIn" loading="lazy"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

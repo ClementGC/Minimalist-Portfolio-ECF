@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+    <link rel="icon" href="/img/Home/Minimalist-PF-white.svg">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav nav container">
+            <figure class="main-nav-logo nav-logo">
+                <img src="/img/Home/Minimalist-PF-black.svg" alt="Minimalist Portfolio" loading="lazy">
+            </figure>
+            <button class="main-nav__toggler" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+                <span class="main-nav__bar"></span>
+                <span class="main-nav__bar"></span>
+                <span class="main-nav__bar"></span>
+            </button>
+            <ul class="main-nav-list nav-list" id="menu">
+                <li class="menu-item"><a href="/index.html" class="nav-link active">Home</a></li>
+                <li class="menu-item"><a href="/portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="menu-item"><a href="/contact.html" class="nav-link">Contact me</a></li>
+            </ul>
+        </nav>
+        <section class="presentation-content container">
+            <figure class="presentation-bg">
+                <img class="img-ms" srcset="/img/Home/Bitmap@2x.png 2x" src="/img/Home/Bitmap.png" alt="Bitmap" loading="lazy">
+                <img class="img-sm" srcset="/img/Home/Bitmap-sm@2x.png 2x" src="/img/Home/Bitmap-sm.png" alt="Bitmap" loading="lazy">
+            </figure>
+            <div class="presentation-item">
+                <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+                <a href="#about" class="button button-primary" aria-expanded="false" aria-controls="about" aria-label="about">ABOUT ME</a>
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="about-content section-content container" id="about">
+            <article class="about-article article-content">
+                <figure class="about-img content-img">
+                    <img src="/img/Home/Alex.png" srcset="/img/Home/Alex@2x.png 2x" alt="Alex Spencer" loading="lazy">
+                    <img src="/img/Home/Alex-tablet.png" srcset="/img/Home/Alex-tablet@2x.png 2x" alt="Alex Spencer" loading="lazy">
+                    <img src="/img/Home/Alex-small.png" srcset="/img/Home/Alex-small@2x.png 2x" alt="Alex Spencer" loading="lazy">
+                </figure>
+                <div class="about-desc content-desc">
+                    <h2>About Me</h2>
+                    <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.</p>
+                    <a href="/portfolio.html" class="button button-secondary">GO TO PORTFOLIO</a>
+                </div>
+            </article>
+        </section>
+        <section class="contact-content container">
+            <h2>Interested in doing a project together?</h2>
+            <span class="contact-bar"></span>
+            <a href="/contact.html" class="button button-secondary">CONTACT ME</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <nav class="footer-nav nav">
+                <figure class="footer-nav-logo nav-logo">
+                    <img src="/img/Home/Minimalist-PF-white.svg" alt="Minimalist Portfolio" loading="lazy">
+                </figure>
+                <ul class="footer-nav-list nav-list" id="menu">
+                    <li class="menu-item"><a href="/index.html" class="nav-link">Home</a></li>
+                    <li class="menu-item"><a href="/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="menu-item"><a href="/contact.html" class="nav-link">Contact me</a></li>
+                </ul>
+            </nav>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="https://github.com" target="_blank" class="social-link"><img src="/img/Contact Me/Github-white.svg" alt="GitHub" loading="lazy"></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com" target="_blank" class="social-link"><img src="/img/Contact Me/Twitter-white.svg" alt="Twitter" loading="lazy"></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://fr.linkedin.com" target="_blank" class="social-link"><img src="/img/Contact Me/LinkedIn-white.svg" alt="LinkedIn" loading="lazy"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

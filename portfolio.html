@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="/img/Home/Minimalist-PF-white.svg">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav nav container">
+            <figure class="main-nav-logo nav-logo">
+                <img src="/img/Home/Minimalist-PF-black.svg" alt="Minimalist Portfolio" loading="lazy">
+            </figure>
+            <button class="main-nav__toggler" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+                <span class="main-nav__bar"></span>
+                <span class="main-nav__bar"></span>
+                <span class="main-nav__bar"></span>
+            </button>
+            <ul class="main-nav-list nav-list" id="menu">
+                <li class="menu-item"><a href="/index.html" class="nav-link">Home</a></li>
+                <li class="menu-item"><a href="/portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li class="menu-item"><a href="/contact.html" class="nav-link">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="portfolio-content section-content container">
+            <article class="portfolio-article article-content">
+                <figure class="portfolio-img content-img">
+                    <img srcset="/img/Portfolio/Bitmap@2x.png 2x" src="/img/Portfolio/Bitmap.png" alt="Manage site" loading="lazy">
+                </figure>
+                <div class="portfolio-desc content-desc">
+                    <h2>Manage</h2>
+                    <p>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+                    <a href="/manage.html" class="button button-secondary">VIEW PROJECT</a>
+                </div>
+            </article>
+            <article class="portfolio-article article-content">
+                <figure class="portfolio-img content-img">
+                    <img srcset="/img/Portfolio/Bitmap@2x.png 2x" src="/img/Portfolio/Bookmark.png" alt="Bookmark site" loading="lazy">
+                </figure>
+                <div class="portfolio-desc content-desc">
+                    <h2>Bookmark</h2>
+                    <p>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.</p>
+                    <a href="/bookmark.html" class="button button-secondary">VIEW PROJECT</a>
+                </div>
+            </article>
+            <article class="portfolio-article article-content">
+                <figure class="portfolio-img content-img">
+                    <img srcset="/img/Portfolio/Bitmap-1@2x.png 2x" src="/img/Portfolio/Bitmap-1.png" alt="Insure site" loading="lazy">
+                </figure>
+                <div class="portfolio-desc content-desc">
+                    <h2>Insure</h2>
+                    <p>This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.</p>
+                    <a href="/insure.html" class="button button-secondary">VIEW PROJECT</a>
+                </div>
+            </article>
+            <article class="portfolio-article article-content">
+                <figure class="portfolio-img content-img">
+                    <img srcset="/img/Portfolio/Bitmap-2@2x.png 2x" src="/img/Portfolio/Bitmap-2.png" alt="Fylo site" loading="lazy">
+                </figure>
+                <div class="portfolio-desc content-desc">
+                    <h2>Fylo</h2>
+                    <p>This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.</p>
+                    <a href="/fylo.html" class="button button-secondary">VIEW PROJECT</a>
+                </div>
+            </article>
+        </section>
+        <section class="contact-content container">
+            <h2>Interested in doing a project together?</h2>
+            <span class="contact-bar"></span>
+            <a href="/contact.html" class="button button-secondary">CONTACT ME</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <nav class="footer-nav nav">
+                <figure class="footer-nav-logo nav-logo">
+                    <img src="/img/Home/Minimalist-PF-white.svg" alt="Minimalist Portfolio" loading="lazy">
+                </figure>
+                <ul class="footer-nav-list nav-list" id="menu">
+                    <li class="menu-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="menu-item"><a href="" class="nav-link">Portfolio</a></li>
+                    <li class="menu-item"><a href="" class="nav-link">Contact me</a></li>
+                </ul>
+            </nav>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="https://github.com" target="_blank" class="social-link"><img src="/img/Contact Me/Github-white.svg" alt="GitHub" loading="lazy"></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com" target="_blank" class="social-link"><img src="/img/Contact Me/Twitter-white.svg" alt="Twitter" loading="lazy"></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://fr.linkedin.com" target="_blank" class="social-link"><img src="/img/Contact Me/LinkedIn-white.svg" alt="LinkedIn" loading="lazy"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
