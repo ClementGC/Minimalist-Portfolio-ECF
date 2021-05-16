@@ -1,9 +1,7 @@
-/* Set root font-size @10px equivalent */
 html {
     scroll-behavior: smooth;
 }
 
-/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -19,7 +17,7 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.875;
   color: #000;
 }
 
@@ -95,41 +93,5 @@ address {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-}
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  width: 1px;
-  position: absolute;
-  white-space: nowrap;
-}
-
-/* Phone links active only under 36em (576px) */
-a[href^="tel"] {
-  white-space: nowrap;
-  pointer-events: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-@media (max-width: 36em) {
-  a[href^="tel"] {
-    pointer-events: auto;
-    text-decoration: underline;
-  }
-}
-
-/* Print external URLs */
-@media print {
-  a {
-    text-decoration: underline;
-  }
-
-  a[href]:not([href^='#'])::after {
-    content: '('attr(href)')';
   }
 }
