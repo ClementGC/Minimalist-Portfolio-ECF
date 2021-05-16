@@ -138,6 +138,10 @@
     margin-right: 1rem;
 }
 
+.social-link img:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(57%) saturate(283%) hue-rotate(117deg) brightness(86%) contrast(90%);
+}
+
 /* Mobile Menu */
 .main-nav__toggler {
     display: grid;

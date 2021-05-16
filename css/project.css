@@ -35,6 +35,16 @@
     margin-bottom: 2rem;
 }
 
+.project-bg-link {
+    color: var(--darkblue-2);
+    text-decoration: underline;
+    text-underline-offset: 0.1rem;
+}
+
+.project-bg-link:hover {
+    color: var(--cyan);
+}
+
 .project-previews-img img:first-child{
     margin-bottom: 2rem;
     margin-top: 1.75rem;
