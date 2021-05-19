@@ -34,7 +34,7 @@
     bottom: 0;
     right: 8.8125rem;
     background-color: var(--darkblue-2);
-    padding: 1.125rem 1rem 1.125rem 1rem;
+    padding: 1rem;
     max-width: 3rem;
     height: 100%;
 }
@@ -53,6 +53,16 @@
     filter: brightness(0.9);
     content: url('/img/Home/Group\ 3-hover.svg')
 }
+
+.button-primary:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.button-primary:disabled:hover {
+    background-color: var(--darkblue);
+}
+
 
 .button-secondary {
     border: 1px solid var(--darkblue-2);
@@ -209,7 +219,7 @@
         flex-direction: column;
         z-index: 3;
         top: 8.125rem;
-        right: 2rem;
+        right: 2.5rem;
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
         background-color: var(--darkblue-2);
@@ -255,5 +265,11 @@
         flex-direction: column;
         padding-bottom: 3.5rem;
         padding-top: 3.5rem;
+    }
+}
+
+@media screen and  (max-width: 560px) {
+    .main-nav-list {
+        right: 1rem;
     }
 }

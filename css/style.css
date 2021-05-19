@@ -79,6 +79,13 @@ p {
     }
 }
 
+@media screen and (max-width: 560px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 /*header*/
 
 /*presentation section*/
@@ -217,6 +224,10 @@ p {
         padding: 0;
         margin-top: 1.75rem;
         margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 0.9375rem;
     }
 
     .img-sm {
