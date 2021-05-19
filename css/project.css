@@ -25,6 +25,12 @@
     display: block;
     color: var(--cyan);
     padding-top: 1rem;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.content-desc span:nth-child(2) {
+    margin-bottom: 1rem;
 }
 
 .project-bg p {
@@ -50,7 +56,7 @@
     margin-top: 1.75rem;
 }
 
-.project-navigation {
+.project-navigation-content {
     position: relative;
     margin-top: 4rem;
     margin-bottom: 7.5rem;
@@ -62,7 +68,7 @@
     padding-bottom: 2.5rem;
 }
 
-.project-navigation::after {
+.project-navigation-content::after {
     position: absolute;
     top: 0;
     left: 50%;
@@ -161,6 +167,10 @@
         margin-bottom: 2.5rem;
         min-width: auto;
         max-height: none;
+    }
+
+    .content-desc span {
+        font-size: 0.8125rem;
     }
 
     .content-desc .button {
