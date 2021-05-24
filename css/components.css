@@ -18,6 +18,9 @@
 /*components*/
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: .75rem;
     letter-spacing: .125rem;
     padding-top: 1rem;
@@ -26,14 +29,16 @@
     padding-left: 2rem;
     position: relative;
     min-width: 10.2rem;
+    max-height: 3rem;
 }
 
 .button-primary::before {
     position: absolute;
     content: url('/img/Home/Group\ 3.svg');
     bottom: 0;
-    right: 8.8125rem;
-    background-color: var(--darkblue-2);
+    left: -3rem;
+    background-color: var(--darkblue);
+    filter: brightness(0.9);
     padding: 1rem;
     max-width: 3rem;
     height: 100%;
