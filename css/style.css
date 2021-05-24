@@ -105,9 +105,9 @@ p {
     display: none;
 }
 
-.presentation-content .button {
-    left: 2.95rem;
-    bottom: .6rem;
+.presentation-item .button {
+    width: 9.5rem;
+    left: 3rem;
 }
 
 /*section content*/
